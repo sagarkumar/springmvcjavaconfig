@@ -9,7 +9,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class AddController {
 
-    @PostMapping
+    @PostMapping("add")
     public ModelAndView add(@RequestParam("t1") int i,@RequestParam("t2") int j ){
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.addObject("Result",i+j);
